@@ -10,6 +10,7 @@ class Example(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('Ui.ui', self)
+        self.do_paint = False
         self.pushButton.clicked.connect(self.paint)
 
     def paint(self):
